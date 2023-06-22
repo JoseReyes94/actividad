@@ -4,71 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA CIENTÍFICA</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <!-- Enlace al archivo CSS personalizado -->
     <link type="text/css" href="estilos.css" rel="stylesheet">
   </head>
   <body>
    
+    <!-- Barra de navegación -->
     <nav class="navbar">
       <div class="navbar__container">
+        <!-- Enlace al inicio -->
         <a href="#navbar__logo" id="navbar__logo">CALCULADORA CIENTÍFICA</a>
         <ul class="navbar__menu">
           <li class="navbar__item">
+            <!-- Enlace a la sección "Fácil y Sencillo" -->
             <a href="#table" class="navbar__links">Fácil y Sencillo</a>
           </li>
           <li class="navbar__item">
+            <!-- Enlace a la sección "INSTRUCCIONES" -->
             <a href="#instrucciones" class="navbar__links">INSTRUCCIONES</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <table class="calculadora" id="table"><tr>
-    <td colspan="4"><span id="resultado"></span></td>
-</tr>
-<tr>
-    <td><button id="Seno">sen</button></td>
-    <td><button id="Coseno">cos</button></td>
-    <td><button id="Tangente">tan</button></td>
-    <td><button id="Logaritmo">log</button></td>
-</tr>
-<tr>
-    <td><button id="Potencia">^</button></td>
-    <td><button id="Raiz">√</button></td>
-    <td><button id="Factorial">¡</button></td>
-    <td><button id="Decimal">.</button></td>
-</tr>
-<tr>
-    <td><button id="siete">7</button></td>
-    <td><button id="ocho">8</button></td>
-    <td><button id="nueve">9</button></td>
-    <td><button id="division">/</button></td>
-</tr>
-<tr>
-    <td><button id="cuatro">4</button></td>
-    <td><button id="cinco">5</button></td>
-    <td><button id="seis">6</button></td>
-    <td><button id="multiplicacion">*</button></td>
-</tr>
-<tr>
-    <td><button id="uno">1</button></td>
-    <td><button id="dos">2</button></td>
-    <td><button id="tres">3</button></td>
-    <td><button id="resta">-</button></td>
-</tr>
-<tr>
-    <td><button id="igual">=</button></td>
-    <td><button id="reset">C</button></td>
-    <td><button id="cero">0</button></td>
-    <td><button id="suma">+</button></td>
-</tr>
+    <!-- Tabla que contiene la calculadora -->
+    <table class="calculadora" id="table">
+      <tr>
+        <td colspan="4"><span id="resultado"></span></td>
+      </tr>
+      <tr>
+        <td><button id="Seno">sen</button></td>
+        <td><button id="Coseno">cos</button></td>
+        <td><button id="Tangente">tan</button></td>
+        <td><button id="Logaritmo">log</button></td>
+      </tr>
+      <tr>
+        <td><button id="Potencia">^</button></td>
+        <td><button id="Raiz">√</button></td>
+        <td><button id="Factorial">¡</button></td>
+        <td><button id="Decimal">.</button></td>
+      </tr>
+      <tr>
+        <td><button id="siete">7</button></td>
+        <td><button id="ocho">8</button></td>
+        <td><button id="nueve">9</button></td>
+        <td><button id="division">/</button></td>
+      </tr>
+      <tr>
+        <td><button id="cuatro">4</button></td>
+        <td><button id="cinco">5</button></td>
+        <td><button id="seis">6</button></td>
+        <td><button id="multiplicacion">*</button></td>
+      </tr>
+      <tr>
+        <td><button id="uno">1</button></td>
+        <td><button id="dos">2</button></td>
+        <td><button id="tres">3</button></td>
+        <td><button id="resta">-</button></td>
+      </tr>
+      <tr>
+        <td><button id="igual">=</button></td>
+        <td><button id="reset">C</button></td>
+        <td><button id="cero">0</button></td>
+        <td><button id="suma">+</button></td>
+      </tr>
     </table>
+
+    <!-- Sección de instrucciones -->
     <section class="container-fluid" id="instrucciones">
       <div class="container">
-          <div class="row">
-            <div class="col-xl-8 col-12">
-              <h2>INSTRUCCIONES</h2>
-              <p>
+        <div class="row">
+          <div class="col-xl-8 col-12">
+            <h2>INSTRUCCIONES</h2>
+            <p>
+              <!-- Lista de instrucciones para el uso de la calculadora -->
               <ul>
                 <li>La calculadora tiene una interfaz con botones numéricos del 0 al 9</li>
                 <li>Simplemente haga clic en los botones numéricos (0-9). Los números se mostrarán en la pantalla de resultado.</li>
@@ -76,7 +87,7 @@
                 <li>Funciones matemáticas disponibles (seno, coseno, tangente, logaritmo, potencia, raíz y factorial)</li>
               </ul>
                     
-                    Para realizar operaciones aritméticas básicas
+              Para realizar operaciones aritméticas básicas:
               <ul>
                 <li>Ingrese el primer número</li>
                 <li>Haga clic en el botón de la operación deseada (+, -, *, /)</li>
@@ -84,25 +95,27 @@
                 <li>Haga clic en el botón "=" para obtener el resultado</li>
               </ul>
 
-                    Para realizar funciones matemáticas: 
+              Para realizar funciones matemáticas: 
               <ul>
                 <li>Ingrese el número en el que deseas aplicar la función.</li>
-                <li>Haga clic en el botón correspondiente a la función matemática<br>
-                    (**)Para Logaritmos, Raízes y Potencias, Ingrese el segundo número</li>
+                <li>Haga clic en el botón correspondiente a la función matemática</li>
+                <li>Para Logaritmos, Raíces y Potencias, ingrese el segundo número</li>
                 <li>Haga clic en el botón "=" para obtener el resultado</li>
-                <li>Para reiniciar la calculadora y limpiar los datos, haz clic en el botón "C" <br>
-                    (**)Al realizar la operación factorial notará que el resultado sale automáticamente
-                    sin la necesidad de poner el signo igual (=)</li>
+                <li>Para reiniciar la calculadora y limpiar los datos, haz clic en el botón "C"</li>
+                <li>Al realizar la operación factorial notarás que el resultado sale automáticamente sin la necesidad de poner el signo igual (=)</li>
               </ul>
-              </p>
+            </p>
           </div>
-              <div class="col-xl-4 col-12">
-                  <img src="imagenes/Calculadora.jpg" alt="">
-                  <img src="imagenes/calculadora1.jpg" alt="">
-              </div>
+          <div class="col-xl-4 col-12">
+            <!-- Imágenes relacionadas con la calculadora -->
+            <img src="imagenes/Calculadora.jpg" alt="">
+            <img src="imagenes/calculadora1.jpg" alt="">
           </div>
+        </div>
       </div>
-  </section>
+    </section>
+
+    <!-- Script de JavaScript para la funcionalidad de la calculadora -->
     <script src="funciones.js"></script>
   </body>
 </html>
