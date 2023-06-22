@@ -180,3 +180,29 @@ z-index: 999;
   #Decimal:active {
     background-color: #0f0f0e;
   }
+
+  #instrucciones {
+    background-color: #beec81;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+
+#instrucciones h2 {
+  text-align: center;
+  margin-left: 160px;
+  margin-top: 60px;
+  color: #005780;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  right: 165px;
+  font-size: 40px;
+}
+#instrucciones p {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+#instrucciones img {
+  width: 100%;
+  margin-bottom: 100px;
+}
