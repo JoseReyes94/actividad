@@ -201,5 +201,14 @@ function factorial(n) {
     return n;
 }
 
-// Call the init() function to initialize the calculator
 init();
+
+window.addEventListener('DOMContentLoaded', function() {
+    // Agregar el evento onclick al enlace "INSTRUCCIONES"
+    var instruccionesLink = document.getElementById('instruccionesLink');
+    instruccionesLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+      var instruccionesSection = document.getElementById('instrucciones');
+      instruccionesSection.scrollIntoView({ behavior: 'smooth' }); // Desplaza la ventana hacia la sección de instrucciones
+    });
+  });
